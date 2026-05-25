@@ -3,7 +3,9 @@ import { Outlet, NavLink } from 'react-router-dom'
 import { supabase } from '../services/supabase'
 
 const navItems = [
+  const navItems = [
   { path: '/', label: 'Dashboard', icon: '📊' },
+  { path: '/marketplaces', label: 'Marketplace Analytics', icon: '🏪' },
   { path: '/products', label: 'Products', icon: '👗' },
   { path: '/settlements', label: 'Settlements', icon: '💰' },
 ]

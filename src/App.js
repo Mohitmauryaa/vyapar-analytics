@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { supabase } from './services/supabase'
 import Layout from './layouts/Layout'
 import Dashboard from './pages/Dashboard'
+import Marketplaces from './pages/Marketplaces'
 import Products from './pages/Products'
 import Settlements from './pages/Settlements'
 import Login from './pages/Login'
@@ -35,6 +36,7 @@ export default function App() {
         <Route path="/" element={<Layout session={session} />}>
           <Route index element={<Dashboard />} />
           <Route path="products" element={<Products />} />
+          <Route path="marketplaces" element={<Marketplaces />} />
           <Route path="settlements" element={<Settlements />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
